@@ -1,1 +1,33 @@
-<p>registro works!</p>
+
+<header>
+        <h2>
+            PAGINA DE REGISTRO
+          </h2>
+</header>
+
+
+<body>
+        <div class="card">
+            <div class="card-header">
+                Agregar USUARIO
+            </div>
+            <div class="card-body">
+                <form [formGroup]="formulariousuario" (ngSubmit)="enviardatos()">
+                    <div class="mb-3">
+                      <label for="" class="form-label">NOMBRE:</label>
+                      <input type="texth"
+                        class="form-control" name="" formControlName="idcliente" id="" aria-describedby="helpId" placeholder="Escriba su cedula">
+          
+                    </div> 
+                    <div class="btn-group" role="group" aria-label="">
+                        <button type="submit" class="btn btn-success">REGISTRAR</button> 
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+
+<footer>
+             
+</footer> 
+ 
