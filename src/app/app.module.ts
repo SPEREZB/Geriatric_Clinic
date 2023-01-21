@@ -1,4 +1,5 @@
  
+ 
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -7,14 +8,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+//componentes
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { InicioComponent } from './componentes/inicio/inicio.component'; 
+import { AsignarCitasComponent } from './componentes/asignar-citas/asignar-citas.component';
+import { MenusComponent } from './componentes/menus/menus.component';
  
 @NgModule({
   declarations: [
     AppComponent,
     RegistroComponent,
-    InicioComponent 
+    InicioComponent,
+    AsignarCitasComponent,
+    MenusComponent
   ],
   imports: [
     BrowserModule,
