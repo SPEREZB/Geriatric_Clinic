@@ -1072,13 +1072,13 @@ header .circle {
 .contact:before {
   top: 0;
   height: 40%;
-  background: url("img/map.png") center center / cover;
+  background: url("../../../assets/img_inicio/map.png") center center / cover;
 }
 
 .contact:after {
   top: 40%;
   height: 60%;
-  background: url("img/contact-bg.png") center bottom / cover;
+  background: url("../../../assets/img_inicio/contact-bg.png") center bottom / cover;
 }
 
 .contact-box {
