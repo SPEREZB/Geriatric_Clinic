@@ -1071,14 +1071,12 @@ header .circle {
 
 .contact:before {
   top: 0;
-  height: 40%;
-  background: url("img/map.png") center center / cover;
+  height: 40%; 
 }
 
 .contact:after {
   top: 40%;
-  height: 60%;
-  background: url("img/contact-bg.png") center bottom / cover;
+  height: 60%; 
 }
 
 .contact-box {

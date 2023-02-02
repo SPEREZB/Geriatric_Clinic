@@ -1,0 +1,31 @@
+li{
+    margin-right: 50px;
+}
+ 
+ul {
+    list-style: none; 
+    font-weight: 500;
+    font-size: 1.05rem;
+    text-transform: uppercase; 
+ }
+
+ .menupr{
+    position: relative;
+    margin-left: 300px;  
+    padding-top: 30px;
+ }
+
+a{
+    padding: 0.9rem 2.1rem; 
+} 
+a.active {
+    background-color: var(--main-color);
+    color: var(--light-one);
+    border-radius: 2rem;
+    font-size: 1rem; 
+  }
+  a.active:hover {
+    color: var(--light-one);
+    background-color: #0dc591;
+  }
+  
