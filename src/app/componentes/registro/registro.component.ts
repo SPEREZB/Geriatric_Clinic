@@ -3,11 +3,15 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { GeriatricoService } from 'src/app/servicios/geriatrico.service';
 
+
 @Component({
   selector: 'app-registro',
   templateUrl: './registro.component.html',
+  
   styleUrls: ['./registro.component.css']
+  
 })
+
 export class RegistroComponent implements OnInit {
    formulariousuario: FormGroup;
    constructor(public formulario: FormBuilder,
@@ -24,3 +28,4 @@ export class RegistroComponent implements OnInit {
     });  
   }
 }
+
