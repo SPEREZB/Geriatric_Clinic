@@ -1377,6 +1377,14 @@ header .circle {
   animation: scale 1.2s ease-out infinite 1s;
 }
 
+
+
+
+
+
+
+
+
 @keyframes scale {
   0% {
     transform: translate(-50%, -50%) scale(1);

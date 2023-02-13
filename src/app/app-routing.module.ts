@@ -1,3 +1,4 @@
+import { RegistronewComponent } from './componentes/registronew/registronew.component';
 import { MenusComponent } from './componentes/menus/menus.component';
 import { AsignarCitasComponent } from './componentes/asignar-citas/asignar-citas.component';
  
@@ -12,6 +13,7 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
 const routes: Routes = [
   {path:"", redirectTo:"/inicio",pathMatch:"full"}, 
   {path:"registro",component:RegistroComponent},
+  {path:"registronew",component:RegistronewComponent},
   {path:"inicio",component:InicioComponent},
   {path:"asignar-citas",component:AsignarCitasComponent},
   {path:"menus",component:MenusComponent} 

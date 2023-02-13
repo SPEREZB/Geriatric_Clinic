@@ -13,6 +13,7 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { InicioComponent } from './componentes/inicio/inicio.component'; 
 import { AsignarCitasComponent } from './componentes/asignar-citas/asignar-citas.component';
 import { MenusComponent } from './componentes/menus/menus.component';
+import { RegistronewComponent } from './componentes/registronew/registronew.component';
  
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MenusComponent } from './componentes/menus/menus.component';
     RegistroComponent,
     InicioComponent,
     AsignarCitasComponent,
-    MenusComponent
+    MenusComponent,
+    RegistronewComponent
   ],
   imports: [
     BrowserModule,
