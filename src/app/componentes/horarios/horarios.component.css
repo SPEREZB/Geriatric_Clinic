@@ -1,0 +1,37 @@
+html {
+    font-family: sans-serif;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #444;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 3rem auto;
+  }
+   th{
+      background-color: greenyellow;
+   }
+  th,
+  td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+
+  }
+
+  .day-name {
+    background-color: #2fd884;
+  }
+
+  .day-number {
+    text-align: center;
+  }
+
+  .day-number.today {
+    color: #d00;
+    font-weight: bold;
+  }

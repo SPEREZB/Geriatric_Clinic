@@ -1,0 +1,28 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Citas del Doctor</title>
+ 
+</head>
+<body>
+
+<h2>Citas Medicas</h2>
+
+<table>
+  <tr>
+    <th>Fecha</th>
+    <th>Estado</th>
+    <th>Paciente</th>
+    <th>Motivo de la cita</th>
+  </tr>
+  <tr *ngFor="let c of citas;  let control=index">
+    <td style="width: 400px;">{{c.fecha}}</td>
+    <td>{{c.estado}}</td>
+    <td>{{c.nombre_paciente}}</td>
+    <td>{{c.motivo}}</td>
+  </tr>
+</table>
+
+</body>
+</html>

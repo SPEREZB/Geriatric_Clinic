@@ -14,6 +14,8 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
 import { AsignarCitasComponent } from './componentes/asignar-citas/asignar-citas.component';
 import { MenusComponent } from './componentes/menus/menus.component';
 import { RegistronewComponent } from './componentes/registronew/registronew.component';
+import { CitasComponent } from './componentes/citas/citas.component';
+import { HorariosComponent } from './componentes/horarios/horarios.component';
  
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { RegistronewComponent } from './componentes/registronew/registronew.comp
     InicioComponent,
     AsignarCitasComponent,
     MenusComponent,
-    RegistronewComponent
+    RegistronewComponent,
+    CitasComponent,
+    HorariosComponent
   ],
   imports: [
     BrowserModule,
