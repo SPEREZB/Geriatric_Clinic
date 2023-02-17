@@ -206,7 +206,7 @@ img {
 }
 
 .btn:hover {
-  background-color: #6b44e0;
+  background-color: #0dc591;
 }
 
 .btn.small {
@@ -239,7 +239,7 @@ nav .container {
 }
 
 .logo {
-  width: 80px;
+  width: 175px;
   display: flex;
   align-items: center;
 }
