@@ -1,49 +1,64 @@
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous" ></script>
-    <link rel="stylesheet" href="registronew.component.css" /> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="registronew.component.css" />
 </head>
 
+<body style="background-color: white">
+  <div class="login-wrap column-1">
+    <div class="login-html">
+      <input id="tab-2" type="radio" name="tab" class="sign-up" /><label
+        for="tab-2"
+        class="tab"
+        style="color: white"
+        >Registro</label
+      >
 
-<body style="background-color: white;">
-    <div class="login-wrap column-1">
-        <div class="login-html"> 
-            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab" style="color: white;">Registro</label>
-         
-            <div class="login-form"> 
-                <div>
-                    <form [formGroup]="formulariocedula" (ngSubmit)="enviardatos()">      
-                    <div class="group">
-                        <label for="user" class="label">Nombre de usuario</label>
-                        <input id=""  formControlName="nombreusuario"  type="texth" class="input">
-                    </div>
-                    <div class="group">
-                        <label for="pass" class="label">Contraseña</label>
-                        <input id="" formControlName="clave"  type="password" class="input" data-type="password">
-                    </div>
-                    <div class="group">
-                        <label for="pass"  class="label">Repetir contraseña</label>
-                        <input id="" type="password" class="input" data-type="password">
-                    </div> 
-                    <div class="group">
-                        <label for="pass" class="label">Tipo de usuario</label>
-                        <input id=""  formControlName="tipousuario"  type="texth" class="input">
-                    </div> 
-                    <div class="group">
-                         <button type="submit" class="button btn btn-success">REGISTRAR</button> 
-                    </div>
-                    <div class="hr"></div>
-                </form>
-                </div>
+      <div class="login-form">
+        <div>
+          <form [formGroup]="formulariocedula" (ngSubmit)="enviardatos()">
+            <div class="group">
+              <label for="user" class="label">Nombre de usuario</label>
+              <input
+                id=""
+                formControlName="nombreusuario"
+                type="texth"
+                class="input"
+              />
             </div>
+            <div class="group">
+              <label for="pass" class="label">Contraseña</label>
+              <input
+                id=""
+                formControlName="clave"
+                type="password"
+                class="input"
+                data-type="password"
+              />
+            </div> 
+            <div class="group">
+              <label for="pass" class="label">Tipo de usuario</label>
+              <select formControlName="tipousuario" >
+                <option value="Paciente">Paciente</option>
+                <option value="Doctor">Doctor</option>
+              </select>
+            </div>
+            <div class="group">
+              <button type="submit" class="button btn btn-success">
+                REGISTRAR
+              </button>
+              <div class="hr"></div>
+            </div>
+   
+          </form>
         </div>
+      </div>
     </div>
-      <script src="registro.component.js"></script>
+  </div>
+  <script src="registro.component.js"></script>
 </body>
  
-<footer style="background-color: white;">
-
-</footer>

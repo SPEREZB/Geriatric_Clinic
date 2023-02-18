@@ -29,6 +29,7 @@ html {
 
   .day-number {
     text-align: center;
+    background-color: #b6c5c0;
   }
 
   .day-number.today {

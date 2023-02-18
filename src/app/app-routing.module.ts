@@ -1,3 +1,4 @@
+import { AtenderCitasComponent } from './componentes/atender-citas/atender-citas.component'; 
  
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router'; 
@@ -8,17 +9,16 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
 import { RegistronewComponent } from './componentes/registronew/registronew.component';
 import { MenusComponent } from './componentes/menus/menus.component';
 import { AsignarCitasComponent } from './componentes/asignar-citas/asignar-citas.component';
-import { CitasComponent } from './componentes/citas/citas.component';
-import { HorariosComponent } from './componentes/horarios/horarios.component';
+import { CitasComponent } from './componentes/citas/citas.component'; 
 
 const routes: Routes = [
-  {path:"", redirectTo:"/inicio",pathMatch:"full"}, 
+  {path:"", redirectTo:"/registronew",pathMatch:"full"}, 
   {path:"registro",component:RegistroComponent},
   {path:"registronew",component:RegistronewComponent},
   {path:"inicio",component:InicioComponent},
   {path:"asignar-citas",component:AsignarCitasComponent},
   {path:"citas",component:CitasComponent},
-  {path:"horarios",component:HorariosComponent},
+  {path:"atender-citas",component:AtenderCitasComponent},
   {path:"menus",component:MenusComponent} 
 ];
 
