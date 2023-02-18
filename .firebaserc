@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "geradvance-1c5c1"
-  }
+    "default": "geradvance-1c5c1",
+    "geradvance": "os-geradvance"
+  },
+  "targets": {},
+  "etags": {}
 }
