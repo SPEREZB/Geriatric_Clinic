@@ -6,25 +6,32 @@ import { GeriatricoService } from 'src/app/servicios/geriatrico.service';
 
 @Component({
   selector: 'app-registro',
-  templateUrl: './registro.component.html',
-  
+  templateUrl: './registro.component.html', 
   styleUrls: ['./registro.component.css']
   
 })
 
 export class RegistroComponent implements OnInit {
-   formulariousuario: FormGroup;
+  form: FormGroup;
    constructor(public formulario: FormBuilder,
     private ruteador: Router,
-    public servicio: GeriatricoService) {  this.formulariousuario = this.formulario.group({
-       nombre: ['']
+    public servicio: GeriatricoService) {  this.form = this.formulario.group({
+       nombreusuario: [''], clave: ['']
     }); }
 
   ngOnInit(): void {
   }
   enviardatos():any{
-    this.servicio.ingusuario(this.formulariousuario.value).subscribe(respuesta=>{
-      alert(respuesta.message)
+    this.servicio.ingUsuario(this.form.value).subscribe(respuesta=>{ 
+
+      if(respuesta.message=="INGRESO EXITOSO"){
+        this.ruteador.navigateByUrl('/citas');
+      }
+      else
+      {
+        alert(respuesta.message)
+      }
+  
     });  
   }
 }

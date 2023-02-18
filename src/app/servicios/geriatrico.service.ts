@@ -10,7 +10,7 @@ export class GeriatricoService {
   constructor(public clientehttp: HttpClient){ }
 
   //Verificar
-  ingusuario(id:any):Observable<any>{  
+  ingUsuario(id:any):Observable<any>{  
     return this.clientehttp.post(this.api+"verificar",id);
   } 
 
