@@ -10,6 +10,9 @@ body,
 input {
   font-family: "Poppins", sans-serif;
 }
+a{
+   font-size: 15px; 
+}
 
 .container {
   position: relative;
@@ -144,7 +147,7 @@ form.sign-in-form {
   font-weight: 600;
   margin: 10px 0;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.5s; 
 }
 
 .btn:hover {
@@ -223,7 +226,9 @@ form.sign-in-form {
   width: 130px;
   height: 41px;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  padding-bottom: 10px;
+  margin-left: 150px;
 }
 
 .right-panel .image,

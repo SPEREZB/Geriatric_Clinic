@@ -4,6 +4,23 @@ body{
 	background:#c8c8c8;
 	font:600 16px/18px 'Open Sans',sans-serif;
 }
+option{
+	 font-family: 'Courier New', Courier, monospace; font-size: 20px; padding: 10px; background-color: #11bcb1;
+}
+select{
+	size: 50px;
+	width: 130px;
+	height: 40px;
+	font-size: 20px; 
+	padding: 10px;
+	border-radius:25px;
+	background-color: #11bcb1;
+}
+label{
+	font-size: 20px;
+}
+
+
 *,:after,:before{box-sizing:border-box}
 .clearfix:after,.clearfix:before{content:'';display:table}
 .clearfix:after{clear:both;display:block}
@@ -79,6 +96,7 @@ a{color:inherit;text-decoration:none}
 	width:100%;
 	color:#fff;
 	display:block;
+
 }
 .login-form .group .input,
 .login-form .group .button{
@@ -93,7 +111,8 @@ a{color:inherit;text-decoration:none}
 }
 .login-form .group .label{
 	color:#aaa;
-	font-size:12px;
+	font-size:16px;
+	margin-bottom: 10px;
 }
 .login-form .group .button{
 	color: black;
@@ -148,7 +167,7 @@ a{color:inherit;text-decoration:none}
 
 .hr{
 	height:2px;
-	margin:60px 0 50px 0;
+	margin:30px 0 50px 0;
 	background:rgba(255,255,255,.2);
 }
 .foot-lnk{

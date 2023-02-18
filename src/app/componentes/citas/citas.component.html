@@ -15,12 +15,16 @@
     <th>Estado</th>
     <th>Paciente</th>
     <th>Motivo de la cita</th>
+    <th>ACCION</th>
   </tr>
   <tr *ngFor="let c of citas;  let control=index">
     <td style="width: 400px;">{{c.fecha}}</td>
     <td>{{c.estado}}</td>
     <td>{{c.nombre_paciente}}</td>
     <td>{{c.motivo}}</td>
+    <td> 
+      <a class="btn transparent nav-link active" id="sign-up-btn" routerLink="/atender-citas">REVISAR</a> 
+    </td>
   </tr>
 </table>
 

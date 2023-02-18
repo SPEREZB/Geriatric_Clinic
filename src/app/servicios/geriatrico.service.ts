@@ -25,4 +25,10 @@ export class GeriatricoService {
     console.log("holaa");
     return this.clientehttp.get(this.api+"getCitas");
   }
+
+  //Diagnosticos
+  regDiagnostico(id:any):Observable<any>{ 
+    return this.clientehttp.post(this.api+"regDiagnostico",id);
+  }
+   
 } 
