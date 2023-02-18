@@ -1,5 +1,4 @@
-import { AtenderCitasComponent } from './componentes/atender-citas/atender-citas.component';
-import { RevisarCitasComponent } from './componentes/revisar-citas/revisar-citas.component';
+import { AtenderCitasComponent } from './componentes/atender-citas/atender-citas.component'; 
  
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router'; 

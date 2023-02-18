@@ -15,8 +15,7 @@ import { AsignarCitasComponent } from './componentes/asignar-citas/asignar-citas
 import { MenusComponent } from './componentes/menus/menus.component';
 import { RegistronewComponent } from './componentes/registronew/registronew.component';
 import { CitasComponent } from './componentes/citas/citas.component';
-import { HorariosComponent } from './componentes/horarios/horarios.component';
-import { RevisarCitasComponent } from './componentes/revisar-citas/revisar-citas.component';
+import { HorariosComponent } from './componentes/horarios/horarios.component'; 
 import { AtenderCitasComponent } from './componentes/atender-citas/atender-citas.component';
  
 @NgModule({
@@ -28,8 +27,7 @@ import { AtenderCitasComponent } from './componentes/atender-citas/atender-citas
     MenusComponent,
     RegistronewComponent,
     CitasComponent,
-    HorariosComponent,
-    RevisarCitasComponent,
+    HorariosComponent, 
     AtenderCitasComponent
   ],
   imports: [
