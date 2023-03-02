@@ -7,19 +7,22 @@ import { RouterModule, Routes } from '@angular/router';
 import { RegistroComponent } from './componentes/registro/registro.component'; 
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { RegistronewComponent } from './componentes/registronew/registronew.component';
-import { MenusComponent } from './componentes/menus/menus.component';
 import { AsignarCitasComponent } from './componentes/asignar-citas/asignar-citas.component';
 import { CitasComponent } from './componentes/citas/citas.component'; 
+import { SingInComponent } from './componentes/sing-in/sing-in.component';
+import { SingUpComponent } from './componentes/sing-up/sing-up.component';
+import { sign } from 'crypto';
 
 const routes: Routes = [
-  {path:"", redirectTo:"/registronew",pathMatch:"full"}, 
+
   {path:"registro",component:RegistroComponent},
   {path:"registronew",component:RegistronewComponent},
   {path:"inicio",component:InicioComponent},
   {path:"asignar-citas",component:AsignarCitasComponent},
   {path:"citas",component:CitasComponent},
   {path:"atender-citas",component:AtenderCitasComponent},
-  {path:"menus",component:MenusComponent} 
+  {path:"acceder",component:SingInComponent},
+  {path: "pre-registro",component:SingUpComponent},
 ];
 
 @NgModule({

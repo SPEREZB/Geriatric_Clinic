@@ -12,11 +12,14 @@ import { AppComponent } from './app.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { InicioComponent } from './componentes/inicio/inicio.component'; 
 import { AsignarCitasComponent } from './componentes/asignar-citas/asignar-citas.component';
-import { MenusComponent } from './componentes/menus/menus.component';
 import { RegistronewComponent } from './componentes/registronew/registronew.component';
 import { CitasComponent } from './componentes/citas/citas.component';
 import { HorariosComponent } from './componentes/horarios/horarios.component'; 
 import { AtenderCitasComponent } from './componentes/atender-citas/atender-citas.component';
+
+import { SingInComponent } from './componentes/sing-in/sing-in.component';
+import { SingUpComponent } from './componentes/sing-up/sing-up.component';
+
  
 @NgModule({
   declarations: [
@@ -24,11 +27,10 @@ import { AtenderCitasComponent } from './componentes/atender-citas/atender-citas
     RegistroComponent,
     InicioComponent,
     AsignarCitasComponent,
-    MenusComponent,
     RegistronewComponent,
     CitasComponent,
     HorariosComponent, 
-    AtenderCitasComponent
+    AtenderCitasComponent, SingInComponent, SingUpComponent,
   ],
   imports: [
     BrowserModule,
