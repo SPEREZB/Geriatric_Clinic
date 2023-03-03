@@ -29,7 +29,11 @@ export class GeriatricoService {
   regUsuarios(body:any):Observable<any>{
     return this.clientehttp.post(this.api+"regUsuario",body);
   }
-
+  
+  //Doctores 
+  getDoc():Observable<any>{ 
+    return this.clientehttp.get(this.api+"getDoc");
+  }
 
   //Citas
   regCitas(body:any):Observable<any>{ 

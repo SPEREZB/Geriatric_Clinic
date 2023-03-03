@@ -10,10 +10,13 @@
   <p>
     MOTIVO: 
     <input class="campos"  type="text" formControlName="motivo"/>
-  </p>
+  </p> 
+    DOCTOR:
+  <select  formControlName="doc" >
+    <option *ngFor="let c of doc;  let control=index" value="{{c.nombre}}">{{c.nombre}}</option> 
+  </select>
   <p>
-    FAMILIAR RESPONSABLE: 
-    <input class="campos"  type="text" formControlName="familir" />
+    
   </p>
   <input type="submit" value="Enviar" />
 </form>

@@ -9,16 +9,19 @@ import { GeriatricoService } from 'src/app/servicios/geriatrico.service';
   styleUrls: ['./asignar-citas.component.css']
 })
 export class AsignarCitasComponent implements OnInit {
-
+   doc:any;
   form: FormGroup;
   constructor(public formulario: FormBuilder,
     private ruteador: Router,
     public servicio: GeriatricoService) {  this.form = this.formulario.group({
-     id_paciente: [''],id_doctor: [''], fecha: [''] ,motivo: ['']
+       fecha: [''] ,motivo: [''],doc: ['']
     }); }
 
 
   ngOnInit(): void {
+    this.servicio.getDoc().subscribe(respuesta => { 
+      this.doc = respuesta;
+    });
   }
   enviardatos():any{
     this.servicio.regCitas(this.form.value).subscribe(respuesta=>{
