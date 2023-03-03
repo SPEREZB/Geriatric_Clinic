@@ -1,0 +1,28 @@
+form {
+    margin-left: 50px; 
+    padding: 20px;
+    border: 1px solid #239806;
+    background-color: #6BD78A;
+    border-radius: 5px;
+    width: 1000px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: #6DB3F2;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.campos
+{
+    border: 2px solid #3A6073; padding: 5px 10px; font-size: 12px; border-radius: 5px;
+}

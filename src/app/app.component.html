@@ -1,11 +1,9 @@
+<div *ngIf="showTemplate === 'true'"> 
 <nav class="menupr"> 
 <div>
 <ul style="display: flex; flex-direction: row;">
 <li> 
 <a class="nav-link active" routerLink="inicio">INICIO</a>     
-</li>
-<li> 
-<a class="nav-link active" routerLink="registro">REGISTRO</a>   
 </li> 
 <li>  
     <a class="nav-link active" routerLink="medicamentos">MEDICAMENTOS</a> 
@@ -15,9 +13,14 @@
 </li>   
 <li>  
     <a class="nav-link active" routerLink="acceder">¡REGISTRATE YA!</a>   
-</li>          
+</li>     
+<li> 
+    <a class="nav-link active" routerLink="acceder"  (click)="logout()">SALIR</a>   
+    </li>             
 </ul>
 </div>
 
 </nav>
+</div>
+
 <router-outlet></router-outlet>

@@ -21,8 +21,7 @@ export class CitasComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.servicio.getCitas().subscribe(respuesta => {
-      console.log("hola");
+    this.servicio.getCitas().subscribe(respuesta => { 
       this.citas = respuesta;
     });
   } 

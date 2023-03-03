@@ -6,29 +6,50 @@ import { Observable } from 'rxjs';
 })
 export class GeriatricoService {
   api = "http://localhost:3000/";
+  private showTemplate = "false";
   
   constructor(public clientehttp: HttpClient){ }
 
+
+  setShowTemplate(showTemplate: string) {
+    this.showTemplate = showTemplate;
+  }
+
+  getShowTemplate() {
+    return this.showTemplate;
+  }
+
+
   //Verificar
-  ingUsuario(id:any):Observable<any>{  
-    return this.clientehttp.post(this.api+"verificar",id);
+  ingUsuario(body:any):Observable<any>{  
+    return this.clientehttp.post(this.api+"verificar",body);
   } 
 
   //Usuarios
-  regUsuarios(id:any):Observable<any>{
-    return this.clientehttp.post(this.api+"regUsuario",id);
+  regUsuarios(body:any):Observable<any>{
+    return this.clientehttp.post(this.api+"regUsuario",body);
   }
 
 
   //Citas
-  getCitas():Observable<any>{
-    console.log("holaa");
+  regCitas(body:any):Observable<any>{ 
+    return this.clientehttp.post(this.api+"regCitas",body);
+  }
+
+  getCitas():Observable<any>{ 
     return this.clientehttp.get(this.api+"getCitas");
   }
 
   //Diagnosticos
-  regDiagnostico(id:any):Observable<any>{ 
-    return this.clientehttp.post(this.api+"regDiagnostico",id);
+  regDiagnostico(body:any):Observable<any>{ 
+    return this.clientehttp.post(this.api+"regDiagnostico",body);
   }
    
+
+  //medicamentos
+  getMedi():Observable<any>{ 
+    return this.clientehttp.get(this.api+"getMedi");
+  }
+
+
 } 

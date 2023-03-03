@@ -2,18 +2,18 @@
 <p>
   Por favor, rellene el formulario a continuacion para solicitar una cita con el geriatrico. Despues de enviar el formulario, recibira un correo electronico con la informacion de su cita.
 </p>
-<form action="assign_cita.php" method="post">
+<form [formGroup]="form" (ngSubmit)="enviardatos()" action="assign_cita.php" method="post"> 
   <p>
-    Nombre: 
+    FECHA DESEADA: 
+    <input class="campos" type="date" formControlName="fecha" />
   </p>
   <p>
-    Correo electronico: 
+    MOTIVO: 
+    <input class="campos"  type="text" formControlName="motivo"/>
   </p>
   <p>
-    Fecha deseada: 
-  </p>
-  <p>
-    Hora deseada: 
+    FAMILIAR RESPONSABLE: 
+    <input class="campos"  type="text" formControlName="familir" />
   </p>
   <input type="submit" value="Enviar" />
 </form>

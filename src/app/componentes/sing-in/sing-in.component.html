@@ -22,28 +22,21 @@
             <div class="form login">
                 <span class="title">Acceder</span>
 
-                <form action="#">
+                <form [formGroup]="form" (ngSubmit)="enviardatos()" action="#">
                     <div class="input-field">
-                        <input type="text" placeholder="Ingrese su correo" required>
+                        <input type="text"  formControlName="nombreusuario" placeholder="Ingrese su nombre de usuario" required>
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Ingrese su contraseña" required>
+                        <input type="password"  formControlName="clave" class="password" placeholder="Ingrese su contraseña" required>
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
 
-                    <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id="logCheck">
-                            <label for="logCheck" class="text">Recordarme</label>
-                        </div>
-                        
-                        <a href="#" class="text">¿Recuperar contraseña?</a>
-                    </div>
+         
 
                     <div class="input-field button">
-                        <input type="button" value="Acceder">
+                        <input type="submit" value="Acceder">
                     </div>
                 </form>
 

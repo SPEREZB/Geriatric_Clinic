@@ -19,6 +19,7 @@ import { AtenderCitasComponent } from './componentes/atender-citas/atender-citas
 
 import { SingInComponent } from './componentes/sing-in/sing-in.component';
 import { SingUpComponent } from './componentes/sing-up/sing-up.component';
+import { MedicamentosComponent } from './componentes/medicamentos/medicamentos.component';
 
  
 @NgModule({
@@ -30,7 +31,7 @@ import { SingUpComponent } from './componentes/sing-up/sing-up.component';
     RegistronewComponent,
     CitasComponent,
     HorariosComponent, 
-    AtenderCitasComponent, SingInComponent, SingUpComponent,
+    AtenderCitasComponent, SingInComponent, SingUpComponent, MedicamentosComponent,
   ],
   imports: [
     BrowserModule,

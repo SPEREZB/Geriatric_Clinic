@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Listado de Medicamentos</title>
+</head>
+<body>
+	<h1>Listado de Medicamentos</h1> 
+	<table>
+		<thead>
+			<tr>
+				<th>Nombre del medicamento</th>
+				<th>Laboratorio</th>
+				<th>Cantidad</th>
+                <th>Costo</th>
+				<th>Uso</th>
+				<th>Efectos secundarios</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let m of medi;  let control=index">
+                <td>{{m.nombre}}</td>
+                <td>{{m.laboratorio}}</td>
+                <td>{{m.cantidad}}</td>   
+                <td>{{m.costo}}</td>
+                <td>{{m.uso}}</td>
+                <td>{{m.efectos_secundarios}}</td>
+			</tr>
+		 
+		</tbody>
+	</table>
+</body>
+</html>
