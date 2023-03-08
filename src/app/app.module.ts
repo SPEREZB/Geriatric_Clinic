@@ -21,8 +21,7 @@ import { SingInComponent } from './componentes/sing-in/sing-in.component';
 import { SingUpComponent } from './componentes/sing-up/sing-up.component';
 import { MedicamentosComponent } from './componentes/medicamentos/medicamentos.component';
 import { PanelResidenteComponent } from './componentes/panel-residente/panel-residente.component';
-import { PanelDoctorComponent } from './componentes/panel-doctor/panel-doctor.component';
-import { PanelResidenteHorariosComponent } from './componentes/panel-residente-horarios/panel-residente-horarios.component';
+import { PanelDoctorComponent } from './componentes/panel-doctor/panel-doctor.component'; 
 
  
 @NgModule({
@@ -34,7 +33,7 @@ import { PanelResidenteHorariosComponent } from './componentes/panel-residente-h
     RegistronewComponent,
     CitasComponent,
     HorariosComponent, 
-    AtenderCitasComponent, SingInComponent, SingUpComponent, MedicamentosComponent, PanelResidenteComponent, PanelDoctorComponent, PanelResidenteHorariosComponent,
+    AtenderCitasComponent, SingInComponent, SingUpComponent, MedicamentosComponent, PanelResidenteComponent, PanelDoctorComponent,
   ],
   imports: [
     BrowserModule,

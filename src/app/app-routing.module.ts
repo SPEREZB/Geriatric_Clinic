@@ -18,7 +18,7 @@ const routes: Routes = [
   {path:"atender-citas",component:AtenderCitasComponent},
   {path:"acceder",component:SingInComponent},
   {path:"medicamentos",component:MedicamentosComponent},
-  {path: "pre-registro",component:SingUpComponent},
+  {path: "pre-registro",component:SingUpComponent}, 
 ];
 
 @NgModule({

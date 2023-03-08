@@ -28,32 +28,32 @@ export class GeriatricoService {
 
   //Usuarios
   regUsuarios(body:any):Observable<any>{
-    return this.clientehttp.post(this.api+"regUsuario",body);
+    return this.clientehttp.post(this.apirail+"regUsuario",body);
   }
   
   //Doctores 
   getDoc():Observable<any>{ 
-    return this.clientehttp.get(this.api+"getDoc");
+    return this.clientehttp.get(this.apirail+"getDoc");
   }
 
   //Citas
   regCitas(body:any):Observable<any>{ 
-    return this.clientehttp.post(this.api+"regCitas",body);
+    return this.clientehttp.post(this.apirail+"regCitas",body);
   }
 
   getCitas():Observable<any>{ 
-    return this.clientehttp.get(this.api+"getCitas");
+    return this.clientehttp.get(this.apirail+"getCitas");
   }
 
   //Diagnosticos
   regDiagnostico(body:any):Observable<any>{ 
-    return this.clientehttp.post(this.api+"regDiagnostico",body);
+    return this.clientehttp.post(this.apirail+"regDiagnostico",body);
   }
    
 
   //medicamentos
   getMedi():Observable<any>{ 
-    return this.clientehttp.get(this.api+"getMedi");
+    return this.clientehttp.get(this.apirail+"getMedi");
   }
 
 

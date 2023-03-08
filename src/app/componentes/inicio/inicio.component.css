@@ -22,7 +22,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+main{
+  margin-bottom: 500px;
+}
 body,
 button,
 input,
