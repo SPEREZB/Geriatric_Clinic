@@ -160,12 +160,7 @@
                                     
                                 </a>
                             </li>
-                            <li class="app-search">
-                                <form>
-                                    <input type="text" placeholder="Buscar..." class="form-control">
-                                    <button type="submit" class="sr-only"></button>
-                                </form>
-                            </li>
+                        
                         </ul>
                     </div>
     
@@ -198,10 +193,13 @@
                                 </li>
     
                                 <li class="has-submenu">
-                                    <a href="#"><i class="mdi mdi-buffer"></i>Dietas</a>
+                                    <a routerLink="/dietas"><i class="mdi mdi-buffer"></i>Dietas</a>
                              
                                 </li>
-     
+                                <li class="has-submenu">
+                                    <a class="nav-link active" routerLink="acceder"  (click)="logout()">SALIR</a>   
+                             
+                                </li>
     
                             </ul>
                             <!-- End navigation menu -->

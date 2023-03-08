@@ -8,6 +8,7 @@ import { CitasComponent } from './componentes/citas/citas.component';
 import { SingInComponent } from './componentes/sing-in/sing-in.component';
 import { SingUpComponent } from './componentes/sing-up/sing-up.component'; 
 import { MedicamentosComponent } from './componentes/medicamentos/medicamentos.component';
+import { DietasComponent } from './componentes/dietas/dietas.component';
 import { AtenderCitasComponent } from './componentes/atender-citas/atender-citas.component'; 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:"atender-citas",component:AtenderCitasComponent},
   {path:"acceder",component:SingInComponent},
   {path:"medicamentos",component:MedicamentosComponent},
+  {path: "dietas",component:DietasComponent}, 
   {path: "pre-registro",component:SingUpComponent}, 
 ];
 
