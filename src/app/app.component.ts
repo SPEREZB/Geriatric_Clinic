@@ -16,7 +16,7 @@ export class AppComponent {
   get():any
   {
    this.showTemplate = this.servicio.getShowTemplate();
-   localStorage.setItem('showTemplate', "true");
+ 
   }
   logout():any
   {

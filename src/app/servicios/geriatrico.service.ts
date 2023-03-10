@@ -20,7 +20,6 @@ export class GeriatricoService {
     return this.showTemplate;
   }
 
-
   //Verificar
   ingUsuario(body:any):Observable<any>{  
     return this.clientehttp.post(this.apirail+"verificar",body);
@@ -56,5 +55,8 @@ export class GeriatricoService {
     return this.clientehttp.get(this.apirail+"getMedi");
   }
 
-
+  //Dietas
+  getDietas():Observable<any>{ 
+    return this.clientehttp.get(this.apirail+"getDietas");
+  } 
 } 
