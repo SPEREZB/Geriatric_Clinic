@@ -11,16 +11,14 @@
     </p>
     <form [formGroup]="form" (ngSubmit)="enviardatos()" style="padding: 10px; background-color: #F0F0F0;">
         <label for="patientName">Nombre del paciente:</label>
-        <input class="llenar" type="text" name="patientName" id="patientName" required>
-        <label for="doctor">Médico/a:</label>
-        <input class="llenar" type="text" name="doctor" id="doctor" required>
+        <input class="llenar" type="text" name="patientName" id="patientName" required> 
         <label for="reason">Motivo de la cita:</label>
         <input class="llenar" type="text" name="reason" id="reason" required> 
         <label for="diagnosis">Diagnóstico:</label>
         <textarea name="diagnosis" formControlName="diagnostico" id="diagnosis" rows="3" required></textarea>
         <label for="medications">Medicamentos:</label>
         <textarea name="medications" formControlName="medicamentos" id="medications" rows="3" required></textarea>
-        <label for="medications">Dietas:</label>
+        <label for="medications">Dieta:</label>
         <textarea name="medications" formControlName="dietas" id="medications" rows="3" required></textarea>
         <input class="enviar" type="submit" value="Enviar revisión">
     </form>

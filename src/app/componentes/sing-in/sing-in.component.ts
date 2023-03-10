@@ -9,9 +9,11 @@ import { AppComponent } from '../../app.component';
   templateUrl: './sing-in.component.html',
   styleUrls: ['./sing-in.component.css']
 })
+ 
 export class SingInComponent implements OnInit {
-  form: FormGroup;
-   constructor(public formulario: FormBuilder,
+  form: FormGroup; 
+   constructor( 
+    public formulario: FormBuilder,
     private ruteador: Router,
     private appComponent: AppComponent,
     public servicio: GeriatricoService) {  this.form = this.formulario.group({
@@ -19,20 +21,27 @@ export class SingInComponent implements OnInit {
     }); }
 
   ngOnInit(): void {
+   
+ 
   }
   enviardatos():any{
+    
+   
     this.servicio.ingUsuario(this.form.value).subscribe(respuesta=>{ 
-
-      if(respuesta.message=="INGRESO EXITOSO"){
-        this.servicio.setShowTemplate("true");  
+       
+      if(respuesta.valor=="Doctor"){
+        this.servicio.setShowTemplate("Doc");  
         this.appComponent.get(); 
         this.ruteador.navigate(['/', 'inicio']); 
       }
-      else
-      {
-        alert(respuesta.message)
+      else if(respuesta.valor=="Paciente"){
+        this.servicio.setShowTemplate("Pac");  
+        this.appComponent.get(); 
+        this.ruteador.navigate(['/', 'inicio']); 
       }
-  
+      else{
+        alert(respuesta.message)
+    } 
     });  
   }
 }
