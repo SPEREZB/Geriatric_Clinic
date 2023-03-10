@@ -1,5 +1,6 @@
 li{
     margin-right: 50px;
+    font-size: 50px;
 }
  
 ul {
@@ -16,8 +17,12 @@ ul {
  }
 
 a{
-    padding: 0.9rem 2.1rem; 
+    padding: 0.9rem 2.1rem;  
 } 
+li.has-submenu a {
+  font-size: 20px;
+ 
+}
 a.active {
     background-color: var(--main-color);
     color: var(--light-one);

@@ -32,11 +32,13 @@ export class SingInComponent implements OnInit {
       if(respuesta.valor=="Doctor"){
         this.servicio.setShowTemplate("Doc");  
         this.appComponent.get(); 
+        localStorage.setItem('showTemplate', "Doc");
         this.ruteador.navigate(['/', 'inicio']); 
       }
       else if(respuesta.valor=="Paciente"){
         this.servicio.setShowTemplate("Pac");  
         this.appComponent.get(); 
+        localStorage.setItem('showTemplate', "Pac");
         this.ruteador.navigate(['/', 'inicio']); 
       }
       else{
