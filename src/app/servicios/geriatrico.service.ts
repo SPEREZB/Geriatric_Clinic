@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 })
 export class GeriatricoService {
   api = "http://localhost:3000/"; 
-  apirail = "http://localhost:3977/";
+  apirail = "https://geriatricback-end-production-9817.up.railway.app/";
   private showTemplate = "false";
   
   constructor(public clientehttp: HttpClient){ }
