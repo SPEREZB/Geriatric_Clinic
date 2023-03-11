@@ -1,3 +1,5 @@
+import { AggMediComponent } from './componentes/agg-medi/agg-medi.component';
+import { CrearDietasComponent } from './componentes/crear-dietas/crear-dietas.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router'; 
 
@@ -19,7 +21,9 @@ const routes: Routes = [
   {path:"atender-citas",component:AtenderCitasComponent},
   {path:"acceder",component:SingInComponent},
   {path:"medicamentos",component:MedicamentosComponent},
+  {path:"agg-medi",component:AggMediComponent},
   {path: "dietas",component:DietasComponent}, 
+  {path:"crear-dietas",component:CrearDietasComponent},
   {path: "pre-registro",component:SingUpComponent}, 
 ];
 

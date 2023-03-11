@@ -3,7 +3,7 @@
     <html lang="en">
         <head>
             <meta charset="utf-8" />
-            <title>CALENDARIO</title>
+            <title>DOCTOR</title>
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
             <meta content="Coderthemes" name="author" />
@@ -106,91 +106,14 @@
                         </div>
                     </div>
                 </div>
-            </footer>
-            <!-- End Footer -->
-    
-    
-            <!-- Right Sidebar -->
-            <div class="right-bar">
-                <div class="rightbar-title">
-                    <a href="javascript:void(0);" class="right-bar-toggle float-right">
-                        <i class="dripicons-cross noti-icon"></i>
-                    </a>
-                    <h5 class="m-0">Configurar</h5>
-                </div>
-                <div class="slimscroll-menu">
-                    <!-- User box -->
-                    <div class="user-box">
-                        <div class="user-img">
-                            <img src="assets/images/users/avatar-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
-                            <a href="" class="user-edit"><i class="mdi mdi-pencil"></i></a>
-                        </div>
-                        
-                        <h5><a href="#">Kevin Ponce</a> </h5>
-                        <p class="text-muted mb-0"><small>Admin</small></p>
-                    </div>
-    
-                    <!-- Settings -->
-                    <hr class="mt-0" />
-                    <h5 class="pl-3">Ajuste basico</h5>
-                    <hr class="mb-0" />
-    
-                    <div class="p-3">
-                        <div class="checkbox checkbox-primary mb-2">
-                            <input id="checkbox1" type="checkbox" checked>
-                            <label for="checkbox1">
-                                Notificaciones
-                            </label>
-                        </div>
-                        <div class="checkbox checkbox-primary mb-2">
-                            <input id="checkbox2" type="checkbox" checked>
-                            <label for="checkbox2">
-                                1
-                            </label>
-                        </div>
-                        <div class="checkbox checkbox-primary mb-2">
-                            <input id="checkbox3" type="checkbox">
-                            <label for="checkbox3">
-                                2
-                            </label>
-                        </div>
-                        <div class="checkbox checkbox-primary mb-2">
-                            <input id="checkbox4" type="checkbox" checked>
-                            <label for="checkbox4">
-                                3
-                            </label>
-                        </div>
-                        <div class="checkbox checkbox-primary mb-0">
-                            <input id="checkbox5" type="checkbox" checked>
-                            <label for="checkbox5">
-                                4
-                            </label>
-                        </div>
-                    </div>
-    
-    
-                    <!-- Timeline -->
-                    <hr class="mt-0" />
-                    <h5 class="pl-3 pr-3">Mensajes <span class="float-right badge badge-pill badge-danger">25</span></h5>
-                    <hr class="mb-0" />
-                    <div class="p-3">
-                        <div class="inbox-widget">
-                            <a href="#">
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-1.jpg" class="rounded-circle" alt=""></div>
-                                    <p class="inbox-item-author">1</p>
-                                    <p class="inbox-item-text">2.</p>
-                                    <p class="inbox-item-date">13</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </footer> 
+           
         </body>
     </html>
     
 </div>
+
+
 
 
 
@@ -203,7 +126,7 @@
     <html lang="en">
         <head>
             <meta charset="utf-8" />
-            <title>CALENDARIO</title>
+            <title>PACIENTE</title>
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
             <meta content="Coderthemes" name="author" />
@@ -243,22 +166,9 @@
                                     </div>
                                 </a>
                                 <!-- End mobile menu toggle-->
-                            </li>
-    
-                            
-        
-                        </ul>
-        
-    
-    
-                        <ul class="list-inline menu-left mb-0">
-                            <li class="float-left">
-                                <a href="index.html" class="logo">
-                                    
-                                </a>
-                            </li>
-                        
-                        </ul>
+                            </li> 
+                        </ul> 
+     
                     </div>
     
                 </nav>
@@ -312,7 +222,7 @@
                 </div> <!-- end container -->
             </div>
             <!-- end wrapper -->
-    
+     
     
             <!-- Footer -->
             <footer class="footer">
@@ -326,84 +236,148 @@
             </footer>
             <!-- End Footer -->
     
+     
+        </body>
+    </html>
     
-            <!-- Right Sidebar -->
-            <div class="right-bar">
-                <div class="rightbar-title">
-                    <a href="javascript:void(0);" class="right-bar-toggle float-right">
-                        <i class="dripicons-cross noti-icon"></i>
-                    </a>
-                    <h5 class="m-0">Configurar</h5>
-                </div>
-                <div class="slimscroll-menu">
-                    <!-- User box -->
-                    <div class="user-box">
-                        <div class="user-img">
-                            <img src="assets/images/users/avatar-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
-                            <a href="" class="user-edit"><i class="mdi mdi-pencil"></i></a>
-                        </div>
-                        
-                        <h5><a href="#">Kevin Ponce</a> </h5>
-                        <p class="text-muted mb-0"><small>Admin</small></p>
+</div>
+
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div *ngIf="showTemplate === 'Admin'"> 
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <title>ADMIN</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+            <meta content="Coderthemes" name="author" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+            <!--calendar css-->
+            <link href="https://cdn.jsdelivr.net/gh/KevinPonce-27/JS@main/fullcalendar.min.css" rel="stylesheet" />
+    
+            <!-- Icons css -->
+            <link href="https://cdn.jsdelivr.net/gh/KevinPonce-27/JS@main/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+            <link href="https://cdn.jsdelivr.net/gh/KevinPonce-27/JS@main/webfont.css" rel="stylesheet" type="text/css" />
+            <link href="https://cdn.jsdelivr.net/gh/KevinPonce-27/JS@main/simple-line-icons.css" rel="stylesheet" type="text/css" />
+    
+            <!-- App css -->
+            <!-- build:css -->
+            <link href="https://cdn.jsdelivr.net/gh/KevinPonce-27/JS@main/app.css" rel="stylesheet" type="text/css" />
+            <!-- endbuild -->
+    
+        </head>
+    
+        <body>
+    
+            <!-- Navigation Bar-->
+            <header id="topnav" style="background-color: rgba(202, 20, 33, 0.822);">
+                <nav class="navbar-custom">
+    
+                    <div class="container-fluid">
+                        <ul class="list-unstyled topbar-right-menu float-right mb-0">
+    
+                            <li class="dropdown notification-list">
+                                <!-- Mobile menu toggle-->
+                                <a class="navbar-toggle nav-link">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+                                <!-- End mobile menu toggle-->
+                            </li>
+     
+                        </ul>
+         
                     </div>
     
-                    <!-- Settings -->
-                    <hr class="mt-0" />
-                    <h5 class="pl-3">Ajuste basico</h5>
-                    <hr class="mb-0" />
+                </nav>
+                <!-- end topbar-main -->
     
-                    <div class="p-3">
-                        <div class="checkbox checkbox-primary mb-2">
-                            <input id="checkbox1" type="checkbox" checked>
-                            <label for="checkbox1">
-                                Notificaciones
-                            </label>
-                        </div>
-                        <div class="checkbox checkbox-primary mb-2">
-                            <input id="checkbox2" type="checkbox" checked>
-                            <label for="checkbox2">
-                                1
-                            </label>
-                        </div>
-                        <div class="checkbox checkbox-primary mb-2">
-                            <input id="checkbox3" type="checkbox">
-                            <label for="checkbox3">
-                                2
-                            </label>
-                        </div>
-                        <div class="checkbox checkbox-primary mb-2">
-                            <input id="checkbox4" type="checkbox" checked>
-                            <label for="checkbox4">
-                                3
-                            </label>
-                        </div>
-                        <div class="checkbox checkbox-primary mb-0">
-                            <input id="checkbox5" type="checkbox" checked>
-                            <label for="checkbox5">
-                                4
-                            </label>
-                        </div>
-                    </div>
+                <div class="topbar-menu">
+                    <div class="container-fluid">
+                        <div id="navigation">
+                            <!-- Navigation Menu-->
+                            <ul class="navigation-menu">
+    
+                                <li class="has-submenu">
+                                    <a routerLink="/inicio" ><i class="mdi mdi-view-dashboard"></i>Inicio</a>
+                                </li>
+      
+                                <li  class="has-submenu">
+                                    <a routerLink="/crear-dietas"><i class="mdi mdi-cube-outline"></i>Agregar dietas</a>
+                                    
+                                </li>
+    
+                                <li class="has-submenu">
+                                    <a routerLink="/agg-medi"><i class="mdi mdi-buffer"></i>Agregar medicamento</a>
+                             
+                                </li>
+
+
+                                <li class="has-submenu">
+                                    <a class="nav-link active" routerLink="acceder"  (click)="logout()">SALIR</a>   
+                             
+                                </li>
+    
+                            </ul>
+                            <!-- End navigation menu -->
+    
+                            <div class="clearfix"></div>
+                        </div> <!-- end #navigation -->
+                    </div> <!-- end container -->
+                </div> <!-- end navbar-custom -->
+            </header>
+             <!-- End Navigation Bar-->
     
     
-                    <!-- Timeline -->
-                    <hr class="mt-0" />
-                    <h5 class="pl-3 pr-3">Mensajes <span class="float-right badge badge-pill badge-danger">25</span></h5>
-                    <hr class="mb-0" />
-                    <div class="p-3">
-                        <div class="inbox-widget">
-                            <a href="#">
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-1.jpg" class="rounded-circle" alt=""></div>
-                                    <p class="inbox-item-author">1</p>
-                                    <p class="inbox-item-text">2.</p>
-                                    <p class="inbox-item-date">13</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+             <div class="wrapper">
+                <div class="container-fluid">
+    
+                    <!-- Page title box -->
+                    <div class="page-title-alt-bg"></div>
+                   
+                    <!-- End page title box -->
+    
+               
+    
+                </div> <!-- end container -->
             </div>
+            <!-- end wrapper -->
+     
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            GERADVANCE - DESARROLLADORES: KEVIN PONCE - SEBASTIAN PEREZ
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer -->
+     
+            
         </body>
     </html>
     

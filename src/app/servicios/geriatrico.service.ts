@@ -55,6 +55,15 @@ export class GeriatricoService {
     return this.clientehttp.get(this.apirail+"getMedi");
   }
 
+  regMedi(body:any):Observable<any>{ 
+    return this.clientehttp.post(this.apirail+"regMedi",body);
+  }
+
+  aggMedi(body:any):Observable<any>{ 
+    return this.clientehttp.post(this.apirail+"aggMedi",body);
+  }
+
+
   //Dietas
   getDietas():Observable<any>{ 
     return this.clientehttp.get(this.apirail+"getDietas");

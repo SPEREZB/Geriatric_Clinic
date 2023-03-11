@@ -41,6 +41,12 @@ export class SingInComponent implements OnInit {
         localStorage.setItem('showTemplate', "Pac");
         this.ruteador.navigate(['/', 'inicio']); 
       }
+      else if(respuesta.valor=="Admin"){
+        this.servicio.setShowTemplate("Admin");  
+        this.appComponent.get(); 
+        localStorage.setItem('showTemplate', "Admin");
+        this.ruteador.navigate(['/', 'inicio']); 
+      }
       else{
         alert(respuesta.message)
     } 

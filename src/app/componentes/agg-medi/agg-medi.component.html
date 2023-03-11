@@ -43,44 +43,49 @@
 
 <body>
     <div class="container">
-        <h1>Listado de Dietas para Geriatrico</h1>
-<form action="">  
+        <h1>Agregar Medicamentos Nuevos</h1>
+<form  [formGroup]="form" (ngSubmit)="aggdatos()">  
   <div class="form-group">
     <label for="nombre">Nombre</label>
-    <input type="text" class="form-control" name="nombre" />
+    <input type="text" class="form-control" formControlName="nombre" />
   </div>
   <div class="form-group">
-    <label for="lunes">Lunes</label>
-    <input type="text" class="form-control" name="lunes" />
+    <label for="lunes">Laboratorio</label>
+    <input type="text" class="form-control" formControlName="laboratorio" />
   </div>
   <div class="form-group">
-    <label for="martes">Martes</label>
-    <input type="text" class="form-control" name="martes" />
+    <label for="martes">Cantidad</label>
+    <input type="text" class="form-control" formControlName="cantidad" />
   </div>
   <div class="form-group">
-    <label for="miercoles">Miercoles</label>
-    <input type="text" class="form-control" name="miercoles" />
+    <label for="miercoles">Costo</label>
+    <input type="text" class="form-control" formControlName="costo" />
   </div>
   <div class="form-group">
-    <label for="jueves">Jueves</label>
-    <input type="text" class="form-control" name="jueves" />
+    <label for="jueves">Uso</label>
+    <input type="text" class="form-control" formControlName="uso" />
   </div>
   <div class="form-group">
-    <label for="viernes">Viernes</label>
-    <input type="text" class="form-control" name="viernes" />
+    <label for="viernes">Efectos secundarios</label>
+    <input type="text" class="form-control" formControlName="efectos_secundarios" />
+  </div> 
+  <div class="form-group">
+    <input type="submit" class="btn btn-success btn-block" value="Crear" />
+  </div>
+</form> 
+
+
+<h1>Agregar Mas Cantidad de Medicamentos Existentes</h1>
+<form [formGroup]="form2" (ngSubmit)="enviardatos()">  
+  <div class="form-group">
+    <label for="nombre">Idmedicamento</label>
+    <input type="text" class="form-control" formControlName="id_medicamento"  />
   </div>
   <div class="form-group">
-    <label for="sabado">Sábado</label>
-    <input type="text" class="form-control" name="sabado" />
+    <label for="lunes">Cantidad</label>
+    <input type="text" class="form-control" formControlName="cant"  />
   </div>
-  <div class="form-group">
-    <label for="domingo">Domingo</label>
-    <input type="text" class="form-control" name="domingo" />
-  </div>
-  <div class="form-group">
-    <label for="costo">Costo</label>
-    <input type="text" class="form-control" name="costo" />
-  </div>
+  
   <div class="form-group">
     <input type="submit" class="btn btn-success btn-block" value="Crear" />
   </div>
