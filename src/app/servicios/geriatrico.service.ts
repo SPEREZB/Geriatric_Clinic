@@ -34,6 +34,9 @@ export class GeriatricoService {
   getDoc():Observable<any>{ 
     return this.clientehttp.get(this.apirail+"getDoc");
   }
+  getDocEspecifico():Observable<any>{ 
+    return this.clientehttp.get(this.apirail+"getDocEspecifico");
+  }
 
   //Citas
   regCitas(body:any):Observable<any>{ 
@@ -48,7 +51,9 @@ export class GeriatricoService {
   regDiagnostico(body:any):Observable<any>{ 
     return this.clientehttp.post(this.apirail+"regDiagnostico",body);
   }
-   
+  getDiag():Observable<any>{ 
+    return this.clientehttp.get(this.apirail+"getDiag");
+  } 
 
   //medicamentos
   getMedi():Observable<any>{ 
@@ -68,4 +73,8 @@ export class GeriatricoService {
   getDietas():Observable<any>{ 
     return this.clientehttp.get(this.apirail+"getDietas");
   } 
+
+  regDietas(body:any):Observable<any>{ 
+    return this.clientehttp.post(this.apirail+"regDietas",body);
+  }
 } 

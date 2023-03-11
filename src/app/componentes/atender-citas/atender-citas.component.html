@@ -6,20 +6,33 @@
 </head>
 <body>
     <h1 style="margin-bottom: 0; color: #00897B; font-family: 'Arial'; font-size: 24px; font-weight: bold;">Revisión de cita geriátrica</h1>
-    <p style="line-height: 1.5; font-family: 'Arial'; font-size: 16px; color: #3B3B3B;">
-        Esta plantilla es para revisar la cita geriátrica de un paciente. Por favor, asegúrese de completar todos los campos requeridos.
+    <p style="line-height: 1.5; font-family: 'Arial'; font-size: 16px; color: #3B3B3B;"> 
     </p>
     <form [formGroup]="form" (ngSubmit)="enviardatos()" style="padding: 10px; background-color: #F0F0F0;">
-        <label for="patientName">Nombre del paciente:</label>
-        <input class="llenar" type="text" name="patientName" id="patientName" required> 
-        <label for="reason">Motivo de la cita:</label>
-        <input class="llenar" type="text" name="reason" id="reason" required> 
+        <label for="patientName">Nombre del doctor:</label>
+      
+        <tr  *ngFor="let c of doc;  let control=index"> 
+            <td>{{c.nombre}}</td>   
+       </tr>
+  
         <label for="diagnosis">Diagnóstico:</label>
         <textarea name="diagnosis" formControlName="diagnostico" id="diagnosis" rows="3" required></textarea>
+
         <label for="medications">Medicamentos:</label>
-        <textarea name="medications" formControlName="medicamentos" id="medications" rows="3" required></textarea>
+        <select  formControlName="medi" >
+            <option *ngFor="let c of medi;  let control=index" value="{{c.nombre}}">{{c.nombre}}</option> 
+          </select> 
+ 
         <label for="medications">Dieta:</label>
-        <textarea name="medications" formControlName="dietas" id="medications" rows="3" required></textarea>
+        <select  formControlName="dieta" >
+            <option *ngFor="let c of diag;  let control=index" value="{{c.nombre}}" rows="3" >{{c.nombre}}</option> 
+          </select>  
+
+          <label for="medications">Costo de la cita:</label>
+          <input class="campos"  type="text" formControlName="costo"/>
+          
+
+           <label for=""></label>
         <input class="enviar" type="submit" value="Enviar revisión">
     </form>
 </body>

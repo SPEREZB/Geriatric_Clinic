@@ -1,3 +1,4 @@
+import { DiagnosticoComponent } from './componentes/diagnostico/diagnostico.component';
 import { AggMediComponent } from './componentes/agg-medi/agg-medi.component';
 import { CrearDietasComponent } from './componentes/crear-dietas/crear-dietas.component';
 import { NgModule } from '@angular/core';
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path:"asignar-citas",component:AsignarCitasComponent},
   {path:"citas",component:CitasComponent},
   {path:"atender-citas",component:AtenderCitasComponent},
+  {path:"diagnostico",component:DiagnosticoComponent},
   {path:"acceder",component:SingInComponent},
   {path:"medicamentos",component:MedicamentosComponent},
   {path:"agg-medi",component:AggMediComponent},

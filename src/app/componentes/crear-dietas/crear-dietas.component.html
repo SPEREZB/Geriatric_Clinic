@@ -43,43 +43,43 @@
 
 <body>
     <div class="container">
-        <h1>Listado de Dietas para Geriatrico</h1>
-<form action="">  
+        <h1>Creacion de Dietas para Geriatrico</h1>
+<form [formGroup]="form" (ngSubmit)="aggdatos()">  
   <div class="form-group">
     <label for="nombre">Nombre</label>
-    <input type="text" class="form-control" name="nombre" />
+    <input type="text" class="form-control" formControlName="nombre" />
   </div>
   <div class="form-group">
     <label for="lunes">Lunes</label>
-    <input type="text" class="form-control" name="lunes" />
+    <input type="text" class="form-control" formControlName="lunes" />
   </div>
   <div class="form-group">
     <label for="martes">Martes</label>
-    <input type="text" class="form-control" name="martes" />
+    <input type="text" class="form-control" formControlName="martes" />
   </div>
   <div class="form-group">
     <label for="miercoles">Miercoles</label>
-    <input type="text" class="form-control" name="miercoles" />
+    <input type="text" class="form-control" formControlName="miercoles" />
   </div>
   <div class="form-group">
     <label for="jueves">Jueves</label>
-    <input type="text" class="form-control" name="jueves" />
+    <input type="text" class="form-control" formControlName="jueves" />
   </div>
   <div class="form-group">
     <label for="viernes">Viernes</label>
-    <input type="text" class="form-control" name="viernes" />
+    <input type="text" class="form-control" formControlName="viernes" />
   </div>
   <div class="form-group">
     <label for="sabado">Sábado</label>
-    <input type="text" class="form-control" name="sabado" />
+    <input type="text" class="form-control" formControlName="sabado" />
   </div>
   <div class="form-group">
     <label for="domingo">Domingo</label>
-    <input type="text" class="form-control" name="domingo" />
+    <input type="text" class="form-control" formControlName="domingo" />
   </div>
   <div class="form-group">
     <label for="costo">Costo</label>
-    <input type="text" class="form-control" name="costo" />
+    <input type="text" class="form-control" formControlName="costo" />
   </div>
   <div class="form-group">
     <input type="submit" class="btn btn-success btn-block" value="Crear" />

@@ -23,6 +23,7 @@ import { MedicamentosComponent } from './componentes/medicamentos/medicamentos.c
 import { DietasComponent } from './componentes/dietas/dietas.component';
 import { CrearDietasComponent } from './componentes/crear-dietas/crear-dietas.component';
 import { AggMediComponent } from './componentes/agg-medi/agg-medi.component';
+import { DiagnosticoComponent } from './componentes/diagnostico/diagnostico.component';
 
  
 @NgModule({
@@ -34,7 +35,7 @@ import { AggMediComponent } from './componentes/agg-medi/agg-medi.component';
     RegistronewComponent,
     CitasComponent,
     HorariosComponent, 
-    AtenderCitasComponent, SingInComponent, SingUpComponent, MedicamentosComponent, DietasComponent, CrearDietasComponent, AggMediComponent, 
+    AtenderCitasComponent, SingInComponent, SingUpComponent, MedicamentosComponent, DietasComponent, CrearDietasComponent, AggMediComponent, DiagnosticoComponent, 
   ],
   imports: [
     BrowserModule,

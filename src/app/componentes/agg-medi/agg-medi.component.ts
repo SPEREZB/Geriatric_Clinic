@@ -39,4 +39,4 @@ export class AggMediComponent implements OnInit {
     });  
   } 
 
-}
+} 

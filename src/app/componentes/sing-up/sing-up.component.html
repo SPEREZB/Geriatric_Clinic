@@ -23,23 +23,24 @@
             <div class="form login">
                 <span class="title">Registrarte</span>
 
-                <form action="#">
+                <form [formGroup]="form" (ngSubmit)="enviardatos()">
                     <div class="input-field">
-                        <input type="text" placeholder="Ingrese su usuario" required>
+                        <input  formControlName="nombreusuario" type="text" placeholder="Ingrese su usuario" required>
                         <i class="uil uil-user"></i>
                     </div> 
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Ingrese una contraseña" required>
+                        <input  formControlName="clave" type="password" class="password" placeholder="Ingrese una contraseña" required>
                         <i class="uil uil-lock icon"></i>
                     </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Confirme la contraseña" required>
-                        <i class="uil uil-lock icon"></i>
-                        <i class="uil uil-eye-slash showHidePw"></i>
-                    </div> 
+               
+                    <select  formControlName="tipousuario" >
+                        <option >Doctor</option> 
+                        <option >Paciente</option> 
+                      </select>  
 
-                    <div class="input-field button">
-                        <input href="/registro" type="button" value="Continuar registro">
+                   
+                      <div class="input-field button">
+                        <input type="submit" value="Registrarse">
                     </div>
 
                 </form>
